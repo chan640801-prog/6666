@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Be+Vietnam+Pro:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#360f00",
+                        "on-primary": "#ffffff",
+                        "primary": "#894d59",
+                        "tertiary-fixed": "#e7e2d8",
+                        "surface-dim": "#e4d7d2",
+                        "on-secondary-fixed-variant": "#7a3006",
+                        "surface": "#fff8f5",
+                        "outline-variant": "#d6c2c4",
+                        "primary-fixed": "#ffd9df",
+                        "surface-tint": "#894d59",
+                        "primary-container": "#f2a7b5",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#c0bbb2",
+                        "inverse-on-surface": "#fbeee8",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#362f2b",
+                        "on-background": "#211a17",
+                        "inverse-primary": "#feb2c0",
+                        "primary-fixed-dim": "#feb2c0",
+                        "on-secondary-container": "#762c03",
+                        "on-surface-variant": "#524345",
+                        "surface-bright": "#fff8f5",
+                        "on-primary-fixed-variant": "#6d3642",
+                        "on-tertiary-fixed-variant": "#494740",
+                        "secondary-container": "#fe9566",
+                        "surface-container-low": "#fef1eb",
+                        "tertiary-fixed-dim": "#cbc6bd",
+                        "on-surface": "#211a17",
+                        "background": "#fff8f5",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#ffb596",
+                        "surface-container": "#f9ebe5",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#615e57",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#723a46",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#ede0da",
+                        "secondary-fixed": "#ffdbcd",
+                        "on-tertiary-container": "#4e4b44",
+                        "secondary": "#99461d",
+                        "surface-container-high": "#f3e6e0",
+                        "outline": "#847375",
+                        "surface-container-highest": "#ede0da",
+                        "on-primary-fixed": "#370b18",
+                        "on-tertiary-fixed": "#1d1b16"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "container-max": "1200px",
+                        "xl": "48px",
+                        "sm": "8px",
+                        "gutter": "24px",
+                        "md": "16px",
+                        "xs": "4px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Serif TC"],
+                        "headline-sm": ["Noto Serif TC"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Noto Serif TC"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .noren-text {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<header class="bg-[#FFFDF9] dark:bg-stone-900 border-b border-[#F2A7B5]/10 shadow-[0_10px_30px_-15px_rgba(242,167,181,0.1)] sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto font-['Noto_Serif_TC'] tracking-wide text-base">
+<div class="text-2xl font-black text-[#F2A7B5] dark:text-pink-400 tracking-tighter">丸龜製麵</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#F2A7B5] font-bold border-b-2 border-[#F2A7B5] pb-1" href="#">首頁</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#F2A7B5] transition-all duration-300" href="#">美味菜單</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#F2A7B5] transition-all duration-300" href="#">門市據點</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#F2A7B5] transition-all duration-300" href="#">聯絡我們</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-stone-50 dark:hover:bg-stone-800 transition-all duration-300 rounded-full">
+<span class="material-symbols-outlined text-[#F2A7B5]">language</span>
+</button>
+<button class="p-2 hover:bg-stone-50 dark:hover:bg-stone-800 transition-all duration-300 rounded-full">
+<span class="material-symbols-outlined text-[#F2A7B5]">person</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative min-h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-90" data-alt="close-up of steaming hot udon noodles in a ceramic bowl with bamboo chopsticks and soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzINjh7HkAUExgskThtPXULK1bk6oRvH8HMtDMDAKVGJ5UkzoJfa1h_7NM40QbNPxhVOzh8hWKB1yK0KvZ3hPEYgYlSpRhba16Q7qCPiRMVRpvqTGrOJ6my4e8qXn571bcYNGrfj__Z4XfgiVr9I_HB5pZukI-Cow_MJPwsDDAHGb4_M6YeasSVYHt8LrnHr6ko3xa6uKyea-ZvcHSrauybMz32TykO5aakg6VPUOzZYXwJt9lIVJbAnIdY2Kohjw3mIB0KHJtBhs"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10 grid md:grid-cols-2 items-center">
+<div class="max-w-2xl space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-container/20 border border-primary-container text-primary rounded-full font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                        源自日本讚岐的匠心美味
+                    </div>
+<h1 class="font-headline-lg text-headline-lg text-on-background">
+                        一碗暖心，<br/>
+<span class="text-primary">現作手感</span> 的溫度。
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        秉持「一條、一碗、一心」的職人精神，我們在店內現場揉製麵團、即時切製煮製。每一口都是充滿彈性的麥香與鮮甜柴魚高湯的完美邂逅。
+                    </p>
+<div class="flex gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-secondary-container transition-colors shadow-lg shadow-secondary/20">
+                            探索人氣菜單
+                        </button>
+<button class="border border-outline text-on-surface px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-surface-container transition-colors">
+                            了解品牌故事
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface relative">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-16 items-start">
+<div class="md:w-1/4 flex flex-col items-center md:items-start">
+<div class="noren-text font-headline-md text-headline-md text-primary py-8 border-x-2 border-primary-container/30 px-4 bg-white/50 backdrop-blur shadow-sm">
+                            職人製法
+                        </div>
+</div>
+<div class="md:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group p-8 bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(137,77,89,0.05)] border border-outline-variant/30 hover:border-primary-container transition-all">
+<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">bakery_dining</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">現磨小麥</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">嚴選優質小麥，每日於店內精密研磨，保留最純粹的麵粉香氣與營養成分。</p>
+</div>
+<div class="group p-8 bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(137,77,89,0.05)] border border-outline-variant/30 hover:border-primary-container transition-all">
+<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">water_drop</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">嚴選高湯</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">選用北海道產真昆布與特製柴魚片，定時熬製，確保每一勺湯汁都甘醇鮮甜。</p>
+</div>
+<div class="group p-8 bg-white rounded-2xl shadow-[0_20px_40px_-15px_rgba(137,77,89,0.05)] border border-outline-variant/30 hover:border-primary-container transition-all">
+<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">countertops</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4">現場煮製</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">堅持開放式廚房，讓您親眼見證從揉麵到撈起的每一道工序，感受最新鮮的熱度。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white">
+<div class="container mx-auto px-8">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-on-background">經典原味 · 季節限定</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">探索我們最受歡迎的手作烏龍麵料理</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 group relative overflow-hidden rounded-3xl aspect-[16/9]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="traditional beef udon bowl with green onions and tempura flakes on a rustic wooden table with atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_9zCEZ0NJR5SWaFi7nDuliuYOJNKmLWlcPPZdgbX_D4E3sayV35tT_XGGD-wQjaSv6mw6jYNUdPlCWVSNUs1RGDVcuttgvcDQIMaGgubrvycxDslw_EjBk70yOI1nIUdzH4TyF-EVK71mvBYMu53e-iqTLV-DrUYlF-r142ewylvekv0fOkv1Ef7tpdOwzRlg8qUChjUp5MyIiAcjymE0wHwbX5HeyOOXEfdBAc9LYwR2NnZUq0PpC6wSh2Qo3L1sH3kWSdTbX9s"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-12">
+<span class="text-primary-container font-label-md text-label-md mb-2">人氣第一</span>
+<h3 class="text-white font-headline-md text-headline-md mb-4">豚骨烏龍麵</h3>
+<p class="text-white/80 max-w-md font-body-md">濃郁豚骨精華與Q彈烏龍麵的完美結合，搭配特製叉燒，層次豐盈。</p>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-3xl aspect-square md:aspect-auto">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="crispy golden vegetable tempura pieces on a white plate with a side of dipping sauce and elegant garnishes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqzhJ5nxuvAlrbbCE0-rvRhRORGrv2CG2d5tsJ23k2IzsWR_qzoQtv81ohoCUBwT3GmKXGf0tbJ7PFpMQ_7IjMBVC4drESiBcf-u9GWqydzj9lyuI-FOj4UhBfYfB8WnOZLcYLj8FemZ8KHRcRhRlxtMOlo71gs2GS6r76PvkQSN1jML0uvOBZR9os4nOsfPs69-vFnCQN1UckpOQlb1eVB8_6fjfXcHa9Fro_a54vNIGA5-5-V1JLu9oBHMUuLel743z6WT84ujo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="text-primary-container font-label-md text-label-md mb-2">極致酥脆</span>
+<h4 class="text-white font-headline-sm text-headline-sm mb-2">特選天婦羅</h4>
+<p class="text-white/70 font-body-md">現炸香酥，與烏龍麵最速配的黃金組合。</p>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-3xl aspect-square md:aspect-auto">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="cold udon noodles served on a bamboo mat with dipping sauce and grated ginger and radish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcb2p-2cOzn1DX8l1Mu941Sxt3oHI9OhLgb2WTNXF6r76U3OXVLlFhrg5uLfu5F7Vgkha2B8HGrdhdc0tBfaZcEghq3D9xkvSMHfhBGjAKscqReTZ_m3ETwDo6YFtOO8KynvMfvFtrn6wfyPifUfmc6qaoGXS5r5jcAH_1aHsm3QivNamKhYop2wlkC_pYfGWBa5CRJ4isUfWiLSoRy9qsccLwlj5q_LxdV8bqSV7Fwit4gi5CQ_CSU1ogde8Sb0J7yBhw-hd_3lY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="text-primary-container font-label-md text-label-md mb-2">清爽推薦</span>
+<h4 class="text-white font-headline-sm text-headline-sm mb-2">釜揚烏龍麵</h4>
+<p class="text-white/70 font-body-md">品嚐烏龍麵最原始的小麥甜味與勁道。</p>
+</div>
+</div>
+<div class="md:col-span-8 group relative overflow-hidden rounded-3xl aspect-[16/9]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="modern udon restaurant interior with warm wood finishes, steam rising from kitchen, and happy customers eating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmz16mLwSZhV6GP1seSbbeTZQySdBEYSnafO_JbROY0JudLFkR8M6AYmwINUIGuBPn5AuzKafZoNuNWjvbfTA1CTBfNYgzD7P3B1Ugq3sYK7Hmr8qm9EL_ZS0AHNvVdw8DXDFI-R3RKFOCalCdeI6-nLctDihR4Yi0UUfB69Wap0pJ8K26Amj9DfxXqHMcSaIDek3qZqDxmqu6yY3M1F-_-fiJxU8FCryhZPDqba-H22gZOZiDEuLwYzXmOK7bdxAT4t-maReQig4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent flex flex-col justify-center items-center p-12 text-center">
+<h3 class="text-white font-headline-md text-headline-md mb-6">歡迎來到丸龜廚房</h3>
+<p class="text-white/90 max-w-xl font-body-lg mb-8">在這裡，我們不僅提供美食，更分享一份來自日本的溫暖待客之道。</p>
+<button class="bg-white text-primary px-8 py-3 rounded-full font-label-md text-label-md hover:bg-primary-container hover:text-white transition-all">
+                                查看所有分店資訊
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="container mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+<img class="rounded-3xl shadow-2xl relative z-10 w-full aspect-[4/5] object-cover" data-alt="hands of a chef kneading smooth white dough on a flour-dusted wooden surface with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVltCXE1J0hb9EdDLLAS70kKYIAWZF9hkrL4bVywNy5iFLdwbYmO05nPw7vjiEFDsfCNv0mBGUeGef-vwkQkdY_GNKZExb3bhjo-RI1_3eeX-fvuB_9IzrdkH139iYOAz-A247KviY7Ipmh0Sq-FC9m3WM9CA5mG9HjZqupd3MSIv5GcfiL7ciW0wsQXl300_8__QiFY5y7VUFfMgx7ioyK2AcrLflAPWtP7IQJ0lPn0i9lv6ZvYNpdJT_Xi1sCoaMtO5NuxJUfUA"/>
+<div class="absolute bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl z-20 max-w-[200px]">
+<p class="text-secondary font-headline-sm text-headline-sm mb-1">100%</p>
+<p class="text-on-surface-variant font-label-md text-label-md">店內手工製作</p>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg text-on-background">匠人之手，<br/>揉出 <span class="text-primary">幸福的筋道</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        每一天，我們的職人都在晨光中開始工作。從測量鹽水比例、揉捏麵團、到熟成的精確控溫，每一個環節都遵循著讚岐烏龍麵的古法工藝。
+                    </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">done_all</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">嚴選原料</h4>
+<p class="font-body-md text-on-surface-variant">只選用最頂級的小麥粉、鹽與過濾水，絕無添加。</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">timer</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">長時間熟成</h4>
+<p class="font-body-md text-on-surface-variant">讓麵團在特定的濕度與溫度下「呼吸」，喚醒小麥的彈性。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#F9F5F2] dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800 w-full pt-16 pb-8">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 w-full max-w-7xl mx-auto font-['Noto_Serif_TC'] text-sm leading-relaxed">
+<div class="mb-12 md:mb-0">
+<div class="text-xl font-bold text-stone-800 dark:text-white mb-4">丸龜製麵</div>
+<p class="text-stone-500 max-w-xs mb-6">
+                    來自日本最大烏龍麵連鎖品牌，致力於將正宗的讚岐美味傳遞給每一位顧客。
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center hover:bg-primary-container hover:border-primary-container transition-all" href="#">
+<span class="material-symbols-outlined text-stone-600">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center hover:bg-primary-container hover:border-primary-container transition-all" href="#">
+<span class="material-symbols-outlined text-stone-600">notifications</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div>
+<h5 class="font-bold text-stone-800 dark:text-white mb-6">關於我們</h5>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">品牌故事</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">最新消息</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">人才招募</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-stone-800 dark:text-white mb-6">顧客服務</h5>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">門市查詢</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">隱私權政策</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">聯絡我們</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-stone-200/50 text-center text-stone-400">
+            © 2024 丸龜製麵 Marugame Seimen. All Rights Reserved.
+        </div>
+</footer>
+</body></html>

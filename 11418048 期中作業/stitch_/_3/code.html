@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&amp;family=Be+Vietnam+Pro:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#360f00",
+                    "on-primary": "#ffffff",
+                    "primary": "#894d59",
+                    "tertiary-fixed": "#e7e2d8",
+                    "surface-dim": "#e4d7d2",
+                    "on-secondary-fixed-variant": "#7a3006",
+                    "surface": "#fff8f5",
+                    "outline-variant": "#d6c2c4",
+                    "primary-fixed": "#ffd9df",
+                    "surface-tint": "#894d59",
+                    "primary-container": "#f2a7b5",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#c0bbb2",
+                    "inverse-on-surface": "#fbeee8",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#362f2b",
+                    "on-background": "#211a17",
+                    "inverse-primary": "#feb2c0",
+                    "primary-fixed-dim": "#feb2c0",
+                    "on-secondary-container": "#762c03",
+                    "on-surface-variant": "#524345",
+                    "surface-bright": "#fff8f5",
+                    "on-primary-fixed-variant": "#6d3642",
+                    "on-tertiary-fixed-variant": "#494740",
+                    "secondary-container": "#fe9566",
+                    "surface-container-low": "#fef1eb",
+                    "tertiary-fixed-dim": "#cbc6bd",
+                    "on-surface": "#211a17",
+                    "background": "#fff8f5",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#ffb596",
+                    "surface-container": "#f9ebe5",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#615e57",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#723a46",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#ede0da",
+                    "secondary-fixed": "#ffdbcd",
+                    "on-tertiary-container": "#4e4b44",
+                    "secondary": "#99461d",
+                    "surface-container-high": "#f3e6e0",
+                    "outline": "#847375",
+                    "surface-container-highest": "#ede0da",
+                    "on-primary-fixed": "#370b18",
+                    "on-tertiary-fixed": "#1d1b16"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "container-max": "1200px",
+                    "xl": "48px",
+                    "sm": "8px",
+                    "gutter": "24px",
+                    "md": "16px",
+                    "xs": "4px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Noto Serif TC"],
+                    "headline-sm": ["Noto Serif TC"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Noto Serif TC"],
+                    "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-[#FFFDF9] dark:bg-stone-900 docked full-width top-0 sticky z-50 border-b border-[#F2A7B5]/10 shadow-[0_10px_30px_-15px_rgba(242,167,181,0.1)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-[#F2A7B5] dark:text-pink-400 tracking-tighter">丸龜製麵</div>
+<nav class="hidden md:flex gap-8 font-['Noto_Serif_TC'] tracking-wide text-base">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#F2A7B5] transition-all duration-300" href="#">首頁</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#F2A7B5] transition-all duration-300" href="#">美味菜單</a>
+<a class="text-[#F2A7B5] font-bold border-b-2 border-[#F2A7B5] pb-1" href="#">門市據點</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#F2A7B5] transition-all duration-300" href="#">連絡我們</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800 p-2 rounded-full transition-all">language</button>
+<button class="material-symbols-outlined text-stone-600 dark:text-stone-400 hover:bg-stone-50 dark:hover:bg-stone-800 p-2 rounded-full transition-all">person</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<!-- Hero Section with Noren style title -->
+<div class="flex flex-col md:flex-row items-start gap-12 mb-16">
+<div class="relative">
+<div class="bg-primary text-on-primary font-headline-lg text-headline-lg px-4 py-8 rounded-b-xl shadow-lg writing-mode-vertical-rl flex items-center justify-center min-h-[240px]">
+                    門市據點
+                </div>
+<div class="absolute -right-4 top-1/2 -translate-y-1/2 w-1 h-24 bg-secondary-container rounded-full opacity-50"></div>
+</div>
+<div class="flex-1 pt-4">
+<h1 class="font-headline-md text-headline-md text-primary mb-4">尋找鄰近的美味溫暖</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    每一碗丸龜製麵都承載著職人的堅持。無論您身在何處，我們都準備好了現煮的烏龍麵與熱騰騰的高湯，期待為您傳遞最道地的 Omotenashi 款待之心。
+                </p>
+</div>
+</div>
+<!-- Main Content Area: Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Store List Sidebar (Left) -->
+<aside class="lg:col-span-4 space-y-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant shadow-sm">
+<div class="flex items-center gap-2 mb-6 text-primary">
+<span class="material-symbols-outlined">search</span>
+<input class="bg-transparent border-none focus:ring-0 font-body-md text-body-md w-full" placeholder="輸入地區或商場名稱..." type="text"/>
+</div>
+<div class="space-y-4 max-h-[600px] overflow-y-auto pr-2 custom-scrollbar">
+<!-- Active Store Card -->
+<div class="p-4 rounded-lg bg-primary-container/20 border-2 border-primary-container transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-primary-container">台中 LaLaport 店</h3>
+<span class="bg-secondary text-white text-[10px] px-2 py-1 rounded-full font-bold">推薦</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-3">台中市東區進德路 600 號 (北館 5F)</p>
+<div class="flex flex-col gap-2 font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span>11:00 - 22:00</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>04-2215-2208</span>
+</div>
+</div>
+</div>
+<!-- Store Card 2 -->
+<div class="p-4 rounded-lg bg-white border border-outline-variant hover:border-primary-container hover:shadow-md transition-all cursor-pointer group">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary mb-2">台中 新光三越店</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-3">台中市西屯區台灣大道三段 301 號 (B2)</p>
+<div class="flex flex-col gap-2 font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span>11:00 - 22:00</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>04-2255-3333</span>
+</div>
+</div>
+</div>
+<!-- Store Card 3 -->
+<div class="p-4 rounded-lg bg-white border border-outline-variant hover:border-primary-container hover:shadow-md transition-all cursor-pointer group">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary mb-2">台北 101 店</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-3">台北市信義區信義路五段 7 號 (B1)</p>
+<div class="flex flex-col gap-2 font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+<span>11:00 - 21:30</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>02-8101-8888</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Map and Detail Area (Right) -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Map Container -->
+<div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white h-[500px]">
+<div class="absolute inset-0 bg-stone-200">
+<img class="w-full h-full object-cover grayscale-[20%] opacity-80" data-alt="stylized map view of Taichung city center with Japanese style minimalist icons and soft pink path highlights" data-location="Taichung" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBan1FnMD8hrqw7Fv97QBaNN5RVKs8mHak1-YRlsawgDNPdhm9-qRMy3G4_LVEn_zZcO35toa0zNhNdY532upMfI34XM7Dzbk8JTPCQayClcudoYY48DHXnG6nSZXoEhE4NXikhxhAusaVd-RgU3IdkMCjsZ_9KQaxwP4AQmAbu6yLIl0jGw9ZNdectstBNyCLadwk7w0fTy17c9pFGLZY5HnfUGyzSvtQFU8P2JzWQRwSHljpeCNMZo1f_iYyI19xXGQ7Z4N1sFJw"/>
+</div>
+<!-- Mock Map UI elements -->
+<div class="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-lg shadow-lg flex items-center gap-2 border border-primary-container/20">
+<div class="w-3 h-3 bg-error rounded-full animate-pulse"></div>
+<span class="font-label-md text-label-md text-on-surface">目前查看：台中 LaLaport 店</span>
+</div>
+<!-- Store Marker -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+<div class="relative">
+<span class="material-symbols-outlined text-primary text-5xl drop-shadow-lg" data-weight="fill">location_on</span>
+<div class="absolute -top-16 left-1/2 -translate-x-1/2 bg-white px-4 py-2 rounded shadow-xl whitespace-nowrap border-b-4 border-primary opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="font-headline-sm text-headline-sm text-primary">台中 LaLaport 店</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Store Preview (Asymmetric Card) -->
+<div class="flex flex-col md:flex-row bg-surface-container-high rounded-2xl overflow-hidden shadow-md">
+<div class="md:w-1/2 h-64 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="modern japanese restaurant exterior with warm wooden accents and soft lighting in a premium shopping mall setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbVe2q5u9cXA6glA6p27P1mSiF1dxKtH34S3qUzz3dP8gkGXrNsyMsfV8a8UWSUb2ocUJbJQuu7qNZ1HClORp85onrsP_OmKkkLoTbKY0TcO0f3JPGABNt5gFb4_UGoDoTdtvREnjUgFBj-F_rxWIukC-C3QUobGhOwsTn_4Ts0JoRf2CzyBbqMkl0t94oHA_hLusfL97m8fgwGufY_yuAzsACOp4KT26pWmM-VdvXp858QoBgAK16S6Q4cntI-w3XsaDd2ZVqa0c"/>
+</div>
+<div class="md:w-1/2 p-8 flex flex-col justify-center">
+<span class="text-primary font-label-md text-label-md mb-2">Featured Location</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">LaLaport 台中店</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            位於台中市東區全新地標 LaLaport 北館，寬敞明亮的店鋪設計融合了現代簡約與和式溫潤，是您購物的最佳休憩站。
+                        </p>
+<div class="flex gap-4">
+<button class="bg-secondary hover:bg-secondary/90 text-white px-6 py-2 rounded-full font-label-md text-label-md transition-colors shadow-lg">
+                                查看路線
+                            </button>
+<button class="border border-primary text-primary hover:bg-primary/5 px-6 py-2 rounded-full font-label-md text-label-md transition-colors">
+                                線上點餐
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ or Info Section -->
+<section class="mt-20 py-12 border-t border-surface-variant">
+<h2 class="font-headline-md text-headline-md text-center text-primary mb-12">門市常見服務</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">takeout_dining</span>
+<h4 class="font-headline-sm text-[20px] mb-2">外帶服務</h4>
+<p class="font-body-md text-sm text-on-surface-variant">所有店鋪皆提供快速便利的外帶選擇</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">wifi</span>
+<h4 class="font-headline-sm text-[20px] mb-2">免費 Wi-Fi</h4>
+<p class="font-body-md text-sm text-on-surface-variant">精選店鋪提供舒適的數位休憩環境</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">credit_card</span>
+<h4 class="font-headline-sm text-[20px] mb-2">多元支付</h4>
+<p class="font-body-md text-sm text-on-surface-variant">接受多種電子支付與信用卡服務</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">child_care</span>
+<h4 class="font-headline-sm text-[20px] mb-2">親子友善</h4>
+<p class="font-body-md text-sm text-on-surface-variant">提供兒童座椅與貼心的餐具組合</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F9F5F2] dark:bg-stone-950 w-full pt-16 pb-8 border-t border-stone-200 dark:border-stone-800">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-xl font-bold text-stone-800 dark:text-white mb-4">丸龜製麵 Marugame Seimen</div>
+<div class="flex gap-6 mt-4">
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors material-symbols-outlined" href="#">public</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors material-symbols-outlined" href="#">share</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors material-symbols-outlined" href="#">mail</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="flex flex-col gap-3 font-['Noto_Serif_TC'] text-sm leading-relaxed">
+<h5 class="font-bold text-stone-800 dark:text-stone-100 mb-2">探索丸龜</h5>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">品牌故事</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">最新消息</a>
+</div>
+<div class="flex flex-col gap-3 font-['Noto_Serif_TC'] text-sm leading-relaxed">
+<h5 class="font-bold text-stone-800 dark:text-stone-100 mb-2">顧客支援</h5>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">人才招募</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">隱私權政策</a>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center text-stone-400 dark:text-stone-600 font-['Noto_Serif_TC'] text-xs">
+            © 2024 丸龜製麵 Marugame Seimen. All Rights Reserved.
+        </div>
+</footer>
+<style>
+        /* Writing mode for vertical text */
+        .writing-mode-vertical-rl {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        
+        /* Custom scrollbar for store list */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #fef1eb;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #f2a7b5;
+            border-radius: 10px;
+        }
+    </style>
+</body></html>
