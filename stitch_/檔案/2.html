@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Be+Vietnam+Pro:wght@600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#360f00",
+                    "on-primary": "#ffffff",
+                    "primary": "#894d59",
+                    "tertiary-fixed": "#e7e2d8",
+                    "surface-dim": "#e4d7d2",
+                    "on-secondary-fixed-variant": "#7a3006",
+                    "surface": "#fff8f5",
+                    "outline-variant": "#d6c2c4",
+                    "primary-fixed": "#ffd9df",
+                    "surface-tint": "#894d59",
+                    "primary-container": "#f2a7b5",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#c0bbb2",
+                    "inverse-on-surface": "#fbeee8",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#362f2b",
+                    "on-background": "#211a17",
+                    "inverse-primary": "#feb2c0",
+                    "primary-fixed-dim": "#feb2c0",
+                    "on-secondary-container": "#762c03",
+                    "on-surface-variant": "#524345",
+                    "surface-bright": "#fff8f5",
+                    "on-primary-fixed-variant": "#6d3642",
+                    "on-tertiary-fixed-variant": "#494740",
+                    "secondary-container": "#fe9566",
+                    "surface-container-low": "#fef1eb",
+                    "tertiary-fixed-dim": "#cbc6bd",
+                    "on-surface": "#211a17",
+                    "background": "#fff8f5",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#ffb596",
+                    "surface-container": "#f9ebe5",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary": "#615e57",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#723a46",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#ede0da",
+                    "secondary-fixed": "#ffdbcd",
+                    "on-tertiary-container": "#4e4b44",
+                    "secondary": "#99461d",
+                    "surface-container-high": "#f3e6e0",
+                    "outline": "#847375",
+                    "surface-container-highest": "#ede0da",
+                    "on-primary-fixed": "#370b18",
+                    "on-tertiary-fixed": "#1d1b16"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "container-max": "1200px",
+                    "xl": "48px",
+                    "sm": "8px",
+                    "gutter": "24px",
+                    "md": "16px",
+                    "xs": "4px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Noto Serif TC"],
+                    "headline-sm": ["Noto Serif TC"],
+                    "label-md": ["Be Vietnam Pro"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Noto Serif TC"],
+                    "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .noren-header {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-[#FFFDF9] dark:bg-stone-900 border-b border-[#F2A7B5]/10 shadow-[0_10px_30px_-15px_rgba(242,167,181,0.1)] docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-[#F2A7B5] dark:text-pink-400 tracking-tighter font-['Noto_Serif_TC']">丸龜製麵</div>
+<nav class="hidden md:flex items-center gap-8 font-['Noto_Serif_TC'] tracking-wide text-base">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#F2A7B5] transition-all duration-300" href="#">首頁</a>
+<a class="text-[#F2A7B5] font-bold border-b-2 border-[#F2A7B5] pb-1 transition-all duration-300" href="#">美味菜單</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#F2A7B5] transition-all duration-300" href="#">門市據點</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#F2A7B5] transition-all duration-300" href="#">連絡我們</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-stone-50 dark:hover:bg-stone-800 transition-all duration-300 rounded-full">
+<span class="material-symbols-outlined text-[#F2A7B5]">language</span>
+</button>
+<button class="p-2 hover:bg-stone-50 dark:hover:bg-stone-800 transition-all duration-300 rounded-full">
+<span class="material-symbols-outlined text-[#F2A7B5]">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section / Menu Header -->
+<section class="relative py-20 px-8 flex flex-col items-center justify-center text-center overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-10">
+<div class="absolute top-0 left-0 w-64 h-64 bg-primary-container rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary-container rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
+</div>
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+<div class="noren-header font-headline-lg text-primary px-4 py-8 border-x-2 border-primary-container bg-white/50 backdrop-blur-sm hidden md:block">
+                    職人魂
+                </div>
+<div class="max-w-2xl text-left md:ml-4">
+<h1 class="font-headline-lg text-on-surface mb-4">美味菜單</h1>
+<p class="font-body-lg text-on-surface-variant">每日現做、現場揉製。將讚岐烏龍麵最原始的純粹，溫暖呈獻給每一位食客。</p>
+</div>
+</div>
+</section>
+<!-- Category Filter -->
+<nav class="sticky top-[72px] bg-background/80 backdrop-blur-md z-40 py-4 border-y border-outline-variant/30 px-8">
+<div class="max-w-7xl mx-auto flex gap-4 overflow-x-auto no-scrollbar justify-center">
+<button class="px-6 py-2 rounded-full bg-secondary text-on-secondary font-label-md whitespace-nowrap">全部餐點</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors font-label-md whitespace-nowrap">人氣推薦</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors font-label-md whitespace-nowrap">釜揚系列</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors font-label-md whitespace-nowrap">湯麵系列</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface hover:bg-surface-variant transition-colors font-label-md whitespace-nowrap">炸物單點</button>
+</div>
+</nav>
+<!-- Menu Grid -->
+<section class="py-16 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(242,167,181,0.15)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Beef Udon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="High-quality close-up of Marugame Seimen beef udon, showing steaming noodles, thinly sliced seasoned beef, and fresh green onions in a rich dashi broth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeRo57UfMt4PFi-ji-ewc6Z_-alflQgndcXMR8m78fqkKRWRjbCDK4gc_zZpu9ehYzqEq2jWG8w7FUY78vLS2m0NuwKjSPuhbRxH_sSA4PnCow9eHG3y5Egi62UJLEE2BYM9cWXLMWolxmwZ-WFMtwfDzjq7oNtjrP4Ju5fmwZXIb-493nEgnLqvHtiG358XT_M63R0L_i9WJYUXvsatYfG0yB7NsPyoYu0tSibFZT0eCjs2WMErkyQPheTd3Ah00LE9fqOtJ5wKk"/>
+<span class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-md">人氣第一</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-on-surface">香蒜牛肉烏龍麵</h3>
+<span class="font-headline-sm text-secondary">NT$159</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">嚴選優質牛肉，搭配濃郁大蒜香氣與特製湯頭，每一口都是滿足的層次感。</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">牛肉</span>
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">中規</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(242,167,181,0.15)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Kamaage Udon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Authentic Kamaage Udon served in a traditional wooden tub (tarai) with steam rising from the hot water, accompanied by a small bowl of dark dipping sauce and garnishes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3naC1Fwh6FrjwLnACP0Fn8RX7B8FeuNtTSo0_HDlb8oPrc_SVQrmEzBE6zPQ2nzpLyvLCPLsySyfu_iQ_KDwH2wIR4sKSOgatk-mK-3kAW5A7EGpk_ee-wIycCeKjLfIPn6dJNw8xMC_0Do6WetyBMfY1nb-eG1xFyoseDa0HhyXUtQZkT5SbQIQ2-UrmdvYkQwfZMDxN1r6eBw0j8ca2e0M_3qyAAm5FjfGoAdIMKUnRx2S1hPVN2RV4PkGhKzTt2i1O3yYfhtc"/>
+<span class="absolute top-4 right-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full font-label-md">經典工法</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-on-surface">釜揚烏龍麵</h3>
+<span class="font-headline-sm text-secondary">NT$89</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">直接由釜鍋撈起的現煮麵條，保留最原始的麵香與彈性，搭配特製沾醬享用。</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">素食友善</span>
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">人氣</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(242,167,181,0.15)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Mentai Kamatama Udon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Delicious Mentai Kamatama Udon with a bright egg yolk, pink spicy pollock roe, and shredded nori seaweed on top of thick, glossy udon noodles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZDYjZYBfSoU_HcfA1bf-_Fr3bf8Pkn3WC1GaDp0QpY59KRaQBfJeup29pMFh4EBRpvd2wsT2ldjuPZlBgK4VJ8I9mXLVCNGi_XGNlfT8WLOrBfDYNcHrTolGUAXzpupx-X8vwTTI3wMOhrhbgViAEqf2QGyMKaEQagsDi9VvjMZe-I466XeFm2uhSwSfEoX3m8DZSyHWXkwY6KZF5-6MCRK2yutFY0JW0vNyepdcF6tm6cCL00osPaC6QPdOQ3n0xqCjJQzo2qOc"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-on-surface">明太蛋拌烏龍麵</h3>
+<span class="font-headline-sm text-secondary">NT$139</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">滑順溫泉蛋混合辛口明太子，攪拌後的濃郁口感與 Q 彈麵條完美融合。</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">明太子</span>
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">微辣</span>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(242,167,181,0.15)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Curry Udon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Rich, thick Japanese curry udon with visible pieces of carrot and onions, garnished with fresh scallions, showing a vibrant golden color" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmS4NUjrjKMyhEg59qqdhflvy2QncoYNqcjXpYo7WWPhfzdbojln1E5XisB44yTPRocy4Js_TinlfR6ayJaJh2WGy0Jw8KahmsHTUC3Y-c9ZSuUAPupzLGlneljX9aZFE7rVBeCPF2_y2H_E3vqr2nTe3kznwNMNMFxjUEgfVgkpSHTlkKRGeTh14DEZAZgpDoQ0dGmWM7TwVPMSogm8R3gjuxxLITl6b_r_6r-WcN8moN9QuVHPR6Naml64BsCCb4_0F8o1_qduw"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-on-surface">咖哩烏龍麵</h3>
+<span class="font-headline-sm text-secondary">NT$149</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">以多種辛香料熬製的和風咖哩，濃稠醇厚，與熱騰騰的麵條交織出溫暖滋味。</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">和風</span>
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">熱銷</span>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(242,167,181,0.15)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Tempura Udon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Golden crispy shrimp tempura and vegetable tempura served atop a bowl of clear broth udon noodles, showing the light and airy texture of the batter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoBLhOrzqzcbV5ajW0VItZFaRWIqRGH5r3SmwItI4c6vydXYYA-DRJRJFpC8EzJar9eJWVt6Gyqz4qAD99JX2fCP6VKBnBa3OqdO1NMRccIuY_cMZv7JAMCJMPqXbX1KsAXlFVLdM93BQdsgS7q4MHkOHMH4qgGQSRfRwqkfI_pi6CjG7xRrXXv_yznobmzWy5KiwBGlueqVLt7yqMfcF58bbyBToT8Z5aRcMUCObyGm2mfFXWlIu0PXfRTFTI9Nwrr61MiQSW2O8"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-on-surface">炸蝦烏龍麵</h3>
+<span class="font-headline-sm text-secondary">NT$179</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">酥脆金黃的天婦羅炸蝦，浸入清爽的大魚干湯頭中，外酥內嫩的頂級享受。</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">炸物</span>
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">海鮮</span>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(242,167,181,0.15)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Kitsune Udon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Traditional Kitsune Udon featuring a large, juicy rectangular piece of sweet simmered fried tofu (aburaage) resting on thick white udon noodles in a clear broth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZsh7Aodi31YHGQE1dl-dwKzbuWvOU7oa9MzJdPYijFr5xtG4lyjrkMlXHqSwrJgJIVplHsgh13LZEd93LK8ui7OEh-vm6s-4VhTQeJ4lDUHSVG1q4i51XkK0Ez3erBqyqWxN9PsYEsGkIziHrNxMjLVGbVRfo0MOeuB1Jp0R5UEbZf-jatkkXKafZ3X-SkqVZn489bGYPWPOrLvU_9WoOKgLA-ssnbJZ9fzyb4ipb1l7efDvYWeZJQKTFWRLC2VZqEFa9oidK3-0"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-on-surface">豆皮烏龍麵</h3>
+<span class="font-headline-sm text-secondary">NT$109</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-6">特大片甜鹹適中的日式豆皮，吸飽了鮮美湯汁，是老少咸宜的經典美味。</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">甜味豆皮</span>
+<span class="px-2 py-1 bg-surface-variant rounded text-xs text-on-surface-variant">高CP值</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Seasonal Special (Asymmetric Layout) -->
+<section class="py-24 bg-surface-container-high overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row items-center gap-12">
+<div class="w-full lg:w-1/2 relative">
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary-container/20 rounded-full blur-2xl"></div>
+<img alt="Seasonal Special" class="relative z-10 w-full h-[500px] object-cover rounded-3xl shadow-2xl" data-alt="Artistic high-quality food photography of a seasonal Marugame Seimen special: Udon topped with fresh sakura shrimp and grated yam, presented with elegant Japanese garnishes in natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYLnPCU3QBTdjSIc06sw7Hu_ZrdZ9Zcews5V6D_Gw6zjtySzA-z3cdRba0kSewNfz8vrZUTLRzZl1R7ILOCAcON3AsQ_bA0BQrh_RaLiNc5Yh2wAbJ1uzGsRFCulA_polqY3r-hJV1JnfVr427AFSwigCx6Zy8wW_ysYn-A4ewF47edSIafaW4AZzU-oSvT9t0QQDPLE6pVkygrfIMmYaed3WJiMFkr8fT7sdaRoRIOVoFmXAAqgxzSTA2Rmu7VjUPA3VJgfURFjQ"/>
+</div>
+<div class="w-full lg:w-1/2">
+<span class="font-label-md text-primary tracking-widest block mb-4">SEASONAL SPECIAL</span>
+<h2 class="font-headline-lg text-on-surface mb-6">春季限定：櫻花蝦山藥泥烏龍麵</h2>
+<p class="font-body-lg text-on-surface-variant mb-8">
+                        選用當季新鮮櫻花蝦，搭配輕盈滑順的山藥泥，淋上特製清淡白醬油，完美演繹春天的清爽氣息。僅限三月至五月供應。
+                    </p>
+<div class="flex items-center gap-6">
+<span class="font-headline-md text-secondary">NT$189</span>
+<button class="px-8 py-3 bg-secondary text-on-secondary rounded-full font-label-md hover:saturate-150 transition-all shadow-lg">立即預訂</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Ordering Process -->
+<section class="py-20 px-8 text-center bg-white">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline-md text-on-surface mb-12">點餐流程</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container mb-4">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+</div>
+<h4 class="font-headline-sm mb-2">1. 選擇烏龍麵</h4>
+<p class="text-on-surface-variant text-sm">先告訴師傅想要的麵款及大小</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container mb-4">
+<span class="material-symbols-outlined text-3xl">shopping_basket</span>
+</div>
+<h4 class="font-headline-sm mb-2">2. 挑選炸物</h4>
+<p class="text-on-surface-variant text-sm">拿起餐盤隨心挑選喜愛的配料</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container mb-4">
+<span class="material-symbols-outlined text-3xl">payments</span>
+</div>
+<h4 class="font-headline-sm mb-2">3. 結帳</h4>
+<p class="text-on-surface-variant text-sm">於櫃檯確認餐點並付款</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container mb-4">
+<span class="material-symbols-outlined text-3xl">add_box</span>
+</div>
+<h4 class="font-headline-sm mb-2">4. 自由加料</h4>
+<p class="text-on-surface-variant text-sm">天婦羅花、青蔥、薑泥免費加</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F9F5F2] dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800 w-full pt-16 pb-8 font-['Noto_Serif_TC'] text-sm leading-relaxed">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-xl font-bold text-stone-800 dark:text-white mb-4">丸龜製麵 Marugame Seimen</div>
+<div class="text-stone-500 dark:text-stone-400 max-w-xs">
+                    源自日本讚岐的正宗美味，職人手工現作，帶給您最溫暖的烏龍麵體驗。
+                </div>
+</div>
+<div class="grid grid-cols-2 gap-12 md:flex md:gap-24">
+<div class="flex flex-col gap-4">
+<h5 class="font-bold text-on-surface">探索丸龜</h5>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">品牌故事</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">最新消息</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bold text-on-surface">企業資訊</h5>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">人才招募</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#F2A7B5] transition-colors" href="#">隱私權政策</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-12 pt-8 border-t border-stone-200/50 dark:border-stone-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-stone-400">
+<div class="flex gap-6">
+<a class="hover:text-[#F2A7B5] transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="hover:text-[#F2A7B5] transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="hover:text-[#F2A7B5] transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+<div>© 2024 丸龜製麵 Marugame Seimen. All Rights Reserved.</div>
+</div>
+</footer>
+</body></html>
